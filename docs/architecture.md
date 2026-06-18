@@ -1,35 +1,51 @@
-# Architecture
+# Architecture Overview
 
-## Backend Flow
+## High-Level Flow
 
 Client
 ↓
-FastAPI Routes
+API Layer (FastAPI)
 ↓
 Service Layer
 ↓
-Repository/Database Layer
+Database Layer (SQLAlchemy)
 ↓
 PostgreSQL
 
-## Database
+---
 
-Users
-Expenses
-Categories
-Budgets
-Subscriptions
-Wallets
-Notifications
+## Backend Components
 
-## Authentication
+### API Layer
 
-JWT Access Token
-JWT Refresh Token
+Handles:
 
-## Future Integrations
+- Request Validation
+- Authentication
+- Response Formatting
 
-Redis
-OCR
-OpenAI
-Email Service
+### Service Layer
+
+Handles:
+
+- Business Logic
+- Calculations
+- Permissions
+
+### Database Layer
+
+Handles:
+
+- Queries
+- Transactions
+- Relationships
+
+---
+
+## Future Components
+
+- Redis Cache
+- Background Jobs
+- OCR Service
+- AI Insights Service
+- Email Notification Service
