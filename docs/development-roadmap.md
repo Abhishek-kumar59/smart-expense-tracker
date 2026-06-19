@@ -15,3 +15,9 @@
 - Expense Tracking
 
 ...
+
+- [ ] Password Hashing
+- [ ] Registration API
+- [ ] Login API
+- [ ] JWT Authentication
+- [ ] Protected Routes
